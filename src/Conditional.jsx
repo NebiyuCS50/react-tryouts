@@ -6,7 +6,9 @@ function Counter() {
     setCount(count + 1);
   }
   function decrement() {
-    setCount(count - 1);
+    if (count > 0) {
+      setCount(count - 1);
+    }
   }
   function reset() {
     setCount(0);
@@ -15,7 +17,9 @@ function Counter() {
     <div>
       <h1>Counter: {count}</h1>
       <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <button onClick={decrement} disabled={count <= 0}>
+        Decrement
+      </button>
       <button onClick={reset}>Reset</button>
     </div>
   );
