@@ -6,12 +6,16 @@ import Conditional from "./Conditional";
 import Person from "./UseState";
 import Try from "./Try";
 import SharedState from "./SharedState";
+import SyncedInputs from "./CommonState";
+import LiftingStateParent from "./LiftingStateParent";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <SharedState />
+    {/* <SyncedInputs /> */}
+    {/* <SharedState /> */}
     {/* <App /> */}
     {/* <Conditional /> */}
     {/* <Person /> */}
     {/* <Try /> */}
+    <LiftingStateParent />
   </StrictMode>
 );
