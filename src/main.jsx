@@ -8,6 +8,7 @@ import Try from "./Try";
 import SharedState from "./SharedState";
 import SyncedInputs from "./CommonState";
 import LiftingStateParent from "./LiftingStateParent";
+import UseEffect from "./UseEffect";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <SyncedInputs /> */}
@@ -16,6 +17,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Conditional /> */}
     {/* <Person /> */}
     {/* <Try /> */}
-    <LiftingStateParent />
+    {/* <LiftingStateParent /> */}
+    <UseEffect />
   </StrictMode>
 );
