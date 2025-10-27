@@ -9,6 +9,7 @@ import SharedState from "./SharedState";
 import SyncedInputs from "./CommonState";
 import LiftingStateParent from "./LiftingStateParent";
 import UseEffect from "./UseEffect";
+import ClassInput from "./ClassInput";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     {/* <SyncedInputs /> */}
@@ -18,6 +19,7 @@ createRoot(document.getElementById("root")).render(
     {/* <Person /> */}
     {/* <Try /> */}
     {/* <LiftingStateParent /> */}
-    <UseEffect />
+    {/* <UseEffect /> */}
+    <ClassInput name="Class Component Input Example" />
   </StrictMode>
 );
