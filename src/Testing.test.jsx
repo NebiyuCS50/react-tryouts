@@ -1,10 +1,10 @@
 import { describe, it, expect } from "vitest";
+import { render, screen } from "@testing-library/react";
+import Test from "./test.jsx";
 
-describe("Something true and Something false", () => {
-  it("should be true", () => {
-    expect(true).toBe(true);
-  });
-  it("should be false", () => {
-    expect(false).toBe(false);
+describe("Test Component", () => {
+  it("renders Hello World", () => {
+    render(<Test />);
+    expect(screen.getByRole("heading").textContent).toMatch(/Hello World/i);
   });
 });
